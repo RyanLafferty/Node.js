@@ -1,3 +1,7 @@
+/*
+Ryan Lafferty
+*/
+
 total = 0;
 limit = 10;
 

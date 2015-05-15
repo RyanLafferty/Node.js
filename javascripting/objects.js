@@ -1,3 +1,7 @@
+/*
+Ryan Lafferty
+*/
+
 var pizza =
 {
   toppings: ['cheese', 'sauce', 'pepperoni'],

@@ -1,2 +1,6 @@
+/*
+Ryan Lafferty
+*/
+
 example = 'example string';
 console.log(example.length);

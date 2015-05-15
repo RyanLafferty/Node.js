@@ -1,3 +1,7 @@
+/*
+Ryan Lafferty
+*/
+
 function math(a, b, c)
 {
   return (a + (b * c));

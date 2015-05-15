@@ -1,3 +1,7 @@
+/*
+Ryan Lafferty
+*/
+
 var limit = (process.argv.length - 2);
 var i = 0;
 var sum = 0;

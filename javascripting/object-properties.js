@@ -1,3 +1,7 @@
+/*
+Ryan Lafferty
+*/
+
 var food =
 {
   types: 'only pizza'
