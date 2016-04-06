@@ -3,8 +3,6 @@ var port = process.argv[2];
 
 var server = net.createServer(function (socket)
 {
-   // socket handling logic
-   //console.log("connection established");
    var current_time = new Date();
    var year = current_time.getFullYear();
    var month = current_time.getMonth() + 1;
@@ -30,7 +28,6 @@ var server = net.createServer(function (socket)
    }
 
    var date_str = "" + year + "-" + month + "-" + day + " " + hours + ":" + minutes + "\n";
-   console.log(date_str);
    socket.end(date_str);
 });
 server.listen(port);
