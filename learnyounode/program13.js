@@ -22,7 +22,6 @@ var server = http.createServer(function(req, res)
                 second: date.getSeconds()
             });
             res.end(jsDate)
-            console.log(jsDate);
         }
         else if(parsedUrl.pathname == "/api/unixtime")
         {
