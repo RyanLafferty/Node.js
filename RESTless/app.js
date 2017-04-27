@@ -10,7 +10,7 @@ var user = {
    }
 }
 
-//pass res via returning a callback function with a bound
+//Method 2: pass res via returning a callback function with a bound
 //parameter
 function getDataCallback(res)
 {
@@ -28,7 +28,7 @@ function getDataCallback(res)
     }.bind(res);
 }
 
-//pass res via global variable
+//Method 1: pass res via global variable
 //not async compat
 function dataCallback(err, data)
 {
@@ -60,9 +60,10 @@ module.exports =
         var dc = getDataCallback(res);
         gres = res;
         // First read existing users.
-        //console.log(res);
+        //Method 1:
         //fs.readFile( __dirname + "/" + "users.json", 'utf8', dataCallback);
         //res = gres;
+        //Method 2:
         fs.readFile( __dirname + "/" + "users.json", 'utf8', dc);
     },
 
