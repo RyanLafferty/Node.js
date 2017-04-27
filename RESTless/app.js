@@ -62,8 +62,8 @@ module.exports =
         // First read existing users.
         //console.log(res);
         //fs.readFile( __dirname + "/" + "users.json", 'utf8', dataCallback);
+        //res = gres;
         fs.readFile( __dirname + "/" + "users.json", 'utf8', dc);
-        res = gres;
     },
 
     get: function (req, res) 
