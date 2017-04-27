@@ -12,6 +12,7 @@ var user = {
 
 //Method 2: pass res via returning a callback function with a bound
 //parameter
+//Con: Not scalable
 function getDataCallback(res)
 {
     return function(err, data)
@@ -29,7 +30,7 @@ function getDataCallback(res)
 }
 
 //Method 1: pass res via global variable
-//not async compat
+//Con: not async compat
 function dataCallback(err, data)
 {
     var res = gres;
