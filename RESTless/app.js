@@ -12,7 +12,8 @@ var user = {
 
 //Method 2: pass res via returning a callback function with a bound
 //parameter
-//Con: Not scalable
+//Technically not completely scalable but after doing some research,
+//this appears to be best practice for passing additional arguments to callbacks
 function getDataCallback(res)
 {
     return function(err, data)
